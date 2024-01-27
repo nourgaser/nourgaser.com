@@ -1,5 +1,6 @@
 {
   "title": "Open Amazing Brick",
+  "slug": "open-amazing-brick",
   "summary": "Casual mobile game.",
   "description": "",
   "note": "This is an unmonetized clone of the popular mobile game Amazing Brick. I made it early on to learn Unity and C#.",

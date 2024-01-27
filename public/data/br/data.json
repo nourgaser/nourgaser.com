@@ -1,5 +1,6 @@
 {
   "title": "Blocky Runner",
+  "slug": "blocky-runner",
   "summary": "A 3D runner game demo.",
   "description": "",
   "note": "I never got around to finishing this project, but it was a great learning experience, especially when it comes to creating custom editor tools in Unity.",

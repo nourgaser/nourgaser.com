@@ -1,9 +1,10 @@
 {
   "title": "A Fragment of Time",
+  "slug": "a-fragment-of-time",
   "summary": "Pixel art step-based strategy roguelike game on a hexagonal grid.",
   "description": "A Fragment of Time is a pixel art step-based strategy roguelike game on a hexagonal grid. You play as a lost soul who can manipulate time to defeat enemies and solve puzzles. Be careful, though, spacetime is fragile and can break if you use your powers irresponsibly.",
   "note": "",
-  "live_url": "fot.nourgaser.com",
+  "live_url": "https://fot.nourgaser.com",
   "src_url": "https://github.com/nourgaser/AFragmentOfTime/tree/core_no_animations",
   "design_url": "https://nourgaser.notion.site/A-Fragment-of-Time-99eb115e3b3b4d9fa166698a63b5b608?pvs=4",
   "tags": [

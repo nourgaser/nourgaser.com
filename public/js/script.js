@@ -4,7 +4,8 @@ var swiper = new Swiper(".projectsSwiper", {
   keyboard: true,
   centeredSlides: true,
   slidesPerView: "auto",
-  initialSlide: 1,
+  // initialSlide: 1,
+  hashNavigation: true,
   coverflowEffect: {
     rotate: 50,
     stretch: 0,
@@ -13,3 +14,12 @@ var swiper = new Swiper(".projectsSwiper", {
     slideShadows: true,
   },
 });
+
+var lazyLoadInstance = new LazyLoad({});
+
+if (lazyLoadInstance) {
+  lazyLoadInstance.update();
+}
+
+
+

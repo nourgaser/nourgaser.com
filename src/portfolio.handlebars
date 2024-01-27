@@ -1,5 +1,5 @@
 {{#each this}}
-<div class="swiper-slide">
+<div class="swiper-slide" data-hash="{{this.slug}}">
     <div class="portfolio-item">
         <h3 class="title">{{this.title}}</h3>
 
@@ -40,12 +40,13 @@
                 {{#each this.media}}
                 <div class="swiper-slide swiper-slide-nested">
                     {{#if this.isVideo}}
-                    <video autoplay loop controls>
-                        <source src="{{this.path}}" type="video/mp4">
+                    <video class="lazy" loop controls preload="metadata" data-src="{{this.path}}">
+                        <source data-src="{{this.path}}" src="{{this.path}}" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                     {{else}}
-                    <img src="{{this.path}}" alt="{{this.alt}}">
+                    <img src="{{this.path}}" alt="{{this.alt}}" loading="lazy">
+                    <div class="swiper-lazy-preloader"></div>
                     {{/if}}
 
                     {{!-- show alt as overlay --}}
@@ -57,6 +58,7 @@
             </div>
             <div class="swiper-pagination swiper-pagination-nested swiper-pagination-{{@index}}"></div>
         </div>
+
 
         <script>
             var swiper = new Swiper('.swiper{{@index}}', {
